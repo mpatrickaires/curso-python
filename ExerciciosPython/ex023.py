@@ -1,0 +1,8 @@
+numero = input('Digite um número de 0 a 9999 --> ')
+dezena = str(int(numero) // 10)
+centena = str(int(numero) // 100)
+milhar = str(int(numero) // 1000)
+print(f'Unidade --> {numero[len(numero) - 1]}')
+print(f'Dezena  --> {dezena[len(dezena) - 1]}')
+print(f'Centena --> {centena[len(centena) - 1]}')
+print(f'Milhar  --> {milhar[len(milhar) - 1]}')

@@ -1,0 +1,6 @@
+print('===== DESAFIO 006 =====\n')
+n = int(input('Digite um valor: '))
+print(f'\n----- NÚMERO \033[4m{n}\033[m -----')
+print(f'Dobro --> {n * 2}')
+print(f'Triplo --> {n * 3}')
+print(f'Raiz quadrada --> {n ** (1/2):.2f}')

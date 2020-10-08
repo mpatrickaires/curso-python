@@ -1,0 +1,16 @@
+numero = int(input('Digite o valor --> '))
+print('\033[36m-+' * 10)
+print('\033[31m[1] Binário \n\033[033m[2] Octal \n\033[35m[3] Hexadecimal')
+print('\033[36m-+' * 10)
+base = int(input('\033[mSua opção --> ')) #
+if base == 1: # Verifica se o usuário escolheu a opção de base binária (dígito 1)
+    print(f'\033[30mBase Decimal --> {numero}')
+    print(f'\033[31mBase Binária --> {bin(numero)[2:]}')
+elif base == 2: # Verifica se o usuário escolheu a opção de base octal (dígito 2)
+    print(f'\033[30mBase Decimal --> {numero}')
+    print(f'\033[33mBase Octal   --> {oct(numero)[2:]}')
+elif base == 3: # Verifica se o usuário escolheu a opção de base hexadecimal (dígito 3)
+    print(f'\033[30mBase Decimal     --> {numero}')
+    print(f'\033[35mBase Hexadecimal --> {hex(numero)[2:].upper()}')
+else: # Bloco executável se o usuário digitar valores diferentes de 1, 2 e 3
+    print('\033[7;30mDÍGITO INVÁLIDO!\033[m')
